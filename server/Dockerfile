@@ -7,6 +7,6 @@ RUN useradd -ms /bin/bash borg
 RUN wget -O /usr/sbin/borg https://github.com/borgbackup/borg/releases/download/1.1.10/borg-linux64 &&\
   chmod +x /usr/sbin/borg
 
-ADD server/entrypoint.sh /entripoint.sh
+ADD server/entrypoint.sh /entrypoint.sh
 
 CMD ["/entrypoint.sh"]
